@@ -51,8 +51,72 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
-.header {
+.home {
 	width: 100%;
 	height: 100vh;
-	background: url(../img/main/bc.jpg) center no-repeat;
+	background: linear-gradient(to top, rgba(70, 130, 180, 0.3)), url(../img/main/bc.jpg) center no-repeat;
+
+	.container {
+		max-width: 1193px;
+		height: 627px;
+		margin: auto;
+	}
 }
+
+/* Header */
+
+.header {
+	width: 100%;
+	height: 145px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	
+
+	&__logo {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	&__logo-icon {
+		width: 96px;
+		height: 100%;
+
+		transition: rotate(45deg);
+	}
+
+	&__logo-icon__figure {
+		width: 56px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo-icon__yellow-ellipse-1 {
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+		color: #E9CC2D;
+	}
+
+	&__logo-icon__yellow-ellipse-2 {
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		color: #E9CC2D;
+	}
+
+	&__logo-title {
+		width: 117px;
+		height: 41px;
+
+		font-family: Aqum;
+		font-weight: 700;
+		font-size: 20px;
+		color: #fff;
+	}
+}
+

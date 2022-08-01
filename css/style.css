@@ -101,8 +101,73 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.header {
+.home {
   width: 100%;
   height: 100vh;
-  background: url(../img/main/bc.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(70, 130, 180, 0.3))), url(../img/main/bc.jpg) center no-repeat;
+  background: linear-gradient(to top, rgba(70, 130, 180, 0.3)), url(../img/main/bc.jpg) center no-repeat;
+}
+.home .container {
+  max-width: 1193px;
+  height: 627px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 145px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.header__logo-icon {
+  width: 96px;
+  height: 100%;
+  -webkit-transition: rotate(45deg);
+  transition: rotate(45deg);
+}
+.header__logo-icon__figure {
+  width: 56px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo-icon__yellow-ellipse-1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  color: #E9CC2D;
+}
+.header__logo-icon__yellow-ellipse-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  color: #E9CC2D;
+}
+.header__logo-title {
+  width: 117px;
+  height: 41px;
+  font-family: Aqum;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
 }
