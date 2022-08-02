@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .home {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(to top, rgba(70, 130, 180, 0.3)), url(../img/main/bc.jpg) center no-repeat;
+	background: linear-gradient(to top, rgba(70, 130, 180, 0.4)), url(../img/main/bc.jpg) center no-repeat;
 
 	.container {
 		max-width: 1193px;
@@ -73,40 +73,118 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	position: relative;
 	
 
 	&__logo {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 20px;
+
+		width: 213px;
+	}
+
+	&__logo::after {
+		content: "";
+		display: block;
+
+		width: 71px;
+		height: 3px;
+
+		background-color: #E9CC2D;
+
+		position: absolute;
+		transform: rotate(90deg);
+		bottom: 55px;
+		left: 229px;
 	}
 
 	&__logo-icon {
 		width: 96px;
 		height: 100%;
-
-		transition: rotate(45deg);
+		position: relative;
 	}
 
-	&__logo-icon__figure {
+	&__logo-icon__figure-yellow {
 		width: 56px;
 		height: 30px;
-		display: flex;
-		align-items: center;
+		position: relative;
+	}
+
+	&__logo-icon__figure-grey {
+		width: 56px;
+		height: 30px;
+		position: relative;
+		position: absolute;
+		transform: rotate(180deg);
+		right: 25px;
+		bottom: 0;
 	}
 
 	&__logo-icon__yellow-ellipse-1 {
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-		color: #E9CC2D;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #E9CC2D;
+		position: absolute;
+		right: 5px;
+		bottom: 32px;
+	}
+
+	&__logo-icon__yellow-ellipse-1::after {
+		content: "";
+		display: block;
+		width: 40px;
+		height: 1px;
+
+		background-color: #E9CC2D;
+		
+		position: absolute;
+		transform: rotate(-50deg);
+		bottom: 0;
+		right: -2px;
 	}
 
 	&__logo-icon__yellow-ellipse-2 {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #E9CC2D;
+		position: absolute;
+		bottom: 5px;
+		right: 20px;
+	}
+
+	&__logo-icon__grey-ellipse-1 {
 		width: 20px;
 		height: 20px;
-		border-radius: 10px;
-		color: #E9CC2D;
+		border-radius: 50%;
+		background-color: #C4C4C4;
+		position: absolute;
+		right: 11px;
+		bottom: 28px;
+	}
+
+	&__logo-icon__grey-ellipse-2 {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #c4c4c4;
+	}
+
+	&__logo-icon__grey-ellipse-1::after {
+		content: "";
+		display: block;
+		width: 40px;
+		height: 1px;
+
+		background-color: #c4c4c4;
+		
+		position: absolute;
+		transform: rotate(-50deg);
+		bottom: 0;
+		right: -3px;
 	}
 
 	&__logo-title {
@@ -117,6 +195,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 		font-weight: 700;
 		font-size: 20px;
 		color: #fff;
+		text-transform: uppercase;
+
+		&__yellow {
+			color: #E9CC2D;
+		}
+
+		&__grey {
+			color: #c4c4c4;
+		}
 	}
 }
 
