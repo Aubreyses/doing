@@ -114,7 +114,6 @@ body {
 .home .container {
   width: 100%;
   max-width: 1193px;
-  height: 627px;
   margin: 0 auto;
 }
 
@@ -436,4 +435,173 @@ body {
 }
 .registr__form-button:hover {
   background-color: #e7af08;
+}
+
+/* Stages */
+.stages {
+  background: url(../img/stages/bc.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/* Title */
+.title {
+  width: 418px;
+  height: 58px;
+  padding-top: 50px;
+  margin: 0 auto;
+  font-family: Aqum;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+}
+.title span {
+  color: #E9CC2D;
+}
+
+/* content */
+.content {
+  width: 100%;
+  margin-top: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content__line {
+  width: 1080px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+.content__line-1 {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 55px 280px 60px 140px;
+}
+.content__line-2 {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin: 0 220px 60px 200px;
+}
+.content__line-3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.content__line:last-child {
+  margin-bottom: 0;
+}
+
+/* Block */
+.block {
+  width: 480px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.block-info {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px auto 0 auto;
+  z-index: 7;
+}
+.block-title {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-bottom: 20px;
+  font-family: Aqum;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.block-title span {
+  color: #E9CC2D;
+}
+.block-text {
+  font-family: Avenir;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.block-number {
+  width: 160px;
+  height: 160px;
+  font-family: Aqum;
+  font-weight: 700;
+  font-size: 150px;
+  color: #E9CC2D;
+  opacity: 0.7;
+  position: absolute;
+}
+.block-number-1 {
+  top: 116px;
+  right: 35px;
+  bottom: 24px;
+  left: 285px;
+}
+.block-number-2 {
+  top: 116px;
+  right: 71px;
+  bottom: 24px;
+  left: 249px;
+}
+.block-number-3 {
+  top: 127px;
+  right: 63px;
+  bottom: 13px;
+  left: 257px;
+}
+.block-number-4 {
+  top: 127px;
+  right: 58px;
+  bottom: 13px;
+  left: 262px;
+}
+.block-number-5 {
+  top: 142px;
+  right: 51px;
+  bottom: 26px;
+  left: 269px;
+}
+
+.content__block-1 {
+  background: url(../img/stages/block/1.png) center no-repeat;
+  background-size: cover;
+  margin-right: 60px;
+}
+.content__block-2 {
+  background: url(../img/stages/block/2.png) center no-repeat;
+  background-size: cover;
+}
+.content__block-3 {
+  background: url(../img/stages/block/3.png) center no-repeat;
+  background-size: cover;
+  margin-right: 60px;
+}
+.content__block-4 {
+  background: url(../img/stages/block/4.png) center no-repeat;
+  background-size: cover;
+}
+.content__block-5 {
+  background: url(../img/stages/block/5.png) center no-repeat;
+  background-size: cover;
 }
