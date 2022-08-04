@@ -51,14 +51,21 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+body {
+	font-family: Avenir, sans-serif;
+}
+
 .home {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(to top, rgba(70, 130, 180, 0.4)), url(../img/main/bc.jpg) center no-repeat;
+	background: url(../img/main/bc.jpg) center no-repeat;
+	background-size: cover;
 
 	.container {
+		width: 100%;
 		max-width: 1193px;
 		height: 627px;
+
 		margin: 0 auto;
 	}
 }
@@ -154,6 +161,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		transition: .2s linear;
 
 		&-icon {
 			width: 28px;
@@ -165,13 +173,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 			font-weight: 700;
 			font-size: 20px;
 			color: #fff;
-
-			transition: opacity .2s linear;
 		}
+	}
 
-		&-text:hover {
-			opacity: 0.8;
-		}
+	&__adress:hover {
+		transform: scale(1.05);
 	}
 
 	&__contacts {
@@ -187,10 +193,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	&__tel {
 		width: 326px;
 		height: 38px;
+		margin-right: 5px;
 
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+
+		transition: .2s linear;
 
 		&-icon {
 			width: 37.5px;
@@ -204,13 +213,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 			color: #fff;
 			text-decoration: none;
-
-			transition: opacity .2s linear;
 		}
+	}
 
-		&-numb:hover {
-			opacity: 0.8;
-		}
+	&__tel:hover {
+		transform: scale(1.05);
 	}
 
 	&__social {
@@ -224,11 +231,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 			height: 40px;
 			margin-right: 13px;
 
-			transition: all .2s linear;
+			transition: .2s linear;
 		}
 
 		&-link:hover {
-			opacity: 0.8;
+			transform: scale(1.1);
 		}
 
 		&-link:last-child {
@@ -271,6 +278,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	height: 400px;
 	display: flex;
 
+	margin-bottom: 20px;
+
 	&__text {
 		width: 618px;
 		height: 400px;
@@ -310,15 +319,68 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	&__img {
 		width: 645px;
 		height: 400px;
+		margin-left: -103px;
 	}
 }
 
 /* Registration */
-.registr-form {
+.registr {
 	width: 100%;
 	height: 50px;
 
-	display: flex;
-	justify-content: left;
+
+	&__form {
+		width: 700px;
+		height: 50px;
+		display: flex;
+		text-align: center;
+
+		&-input {
+			width: 284px;
+			height: 50px;
+
+			padding: 15px 15px;
+
+			background-color: #999A9E;
+			color: #FFFFFF;
+			font-weight: 500;
+			font-size: 20px;
+
+			border-radius: 15px;
+			outline: none;
+			border: none;
+		}
+
+		&-input::placeholder {
+			color: #fff;
+		}
+
+		&-button {
+			width: 459px;
+			height: 50px;
+			margin-left: -43px;
+
+			background-color: #E9CC2D;
+
+			text-transform: uppercase;
+			color: #000000;
+			font-family: Aqum;
+			font-weight: 700;
+			font-size: 20px;
+
+			border-radius: 15px;
+			outline: none;
+			border: none;
+
+			z-index: 7;
+
+			transition: .2s linear;
+		}
+
+		&-button:hover {
+			background-color: #e7af08;
+		}
+	}
 }
+
 
