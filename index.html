@@ -7,7 +7,7 @@
 	<title>STO</title>
 </head>
 <body>
-	<div class="home">
+	<section class="home">
 		<div class="container">
 			<div class="header">
 				<div class="header__top">
@@ -39,14 +39,14 @@
 									+38 (050) 170-88-89
 								</div>
 							</a>
-							<div class="header__social">
-								<a href="" class="header__social-link">
+							<div class="header__social social">
+								<a href="" class="header__social-link social-link">
 									<img src="img/main/social/1.png" alt="">
 								</a>
-								<a href="" class="header__social-link">
+								<a href="" class="header__social-link social-link">
 									<img src="img/main/social/2.png" alt="">
 								</a>
-								<a href="" class="header__social-link">
+								<a href="" class="header__social-link social-link">
 									<img src="img/main/social/3.png" alt="">
 								</a>
 							</div>
@@ -76,9 +76,9 @@
 				</form>
 			</div> <!-- Registr -->
 		</div> <!--Container -->
-	</div> <!-- Home -->
+	</section> <!-- Home -->
 
-	<div class="stages">
+	<section class="stages">
 		<div class="container">
 			<div class="stages__title title"><span>к</span>ак мы работаем</div>
 			<div class="content">
@@ -131,9 +131,9 @@
 				</div>
 			</div> <!-- stages__content -->
 		</div> <!-- container -->
-	</div> <!-- stages -->
+	</section> <!-- stages -->
 
-	<div class="equipment">
+	<section class="equipment">
 		<div class="container">
 			<div class="equipment__title title"><span>о</span>борудование</div>
 
@@ -163,10 +163,75 @@
 				<div class="equipment__block-point">
 					<img src="img/equipment/dot.png" alt="">
 				</div>
-			</div>
+			</div> <!-- Equioment block -->
 
 			<div class="equipment__text">Мы выполняем чистку/мойку сажевых фильтров на профессиональном промышленном оборудовании, с соблюдением заводских норм и при полной стерильности. Мы можем полностью гарантировать результат от своей работы. Работы по чистке фильтров DPF выполняют только квалифицированные специалисты которые прошли обучение по данному направлению, что позволяет нам быть уверенным в качестве своей работы.</div>
+		</div> <!-- Container -->
+	</section> <!-- Equipment -->
+
+	<section class="location">
+		<div class="location__icon">
+			<img src="img/location/point.png" alt="">
 		</div>
+		<div class="location__block">
+			<div class="location__block-info info">
+					<a href="#" class="header__adress">
+						<div class="header__adress-icon">
+							<img src="img/location/1.png" alt="">
+						</div>
+						<div class="header__adress-text">
+							<p>г. Киев</p>
+							<p>ул. Большая Окружная, 4</p>
+						</div>
+					</a>
+					<a href="tel:+380501708889" class="header__tel">
+						<div class="header__tel-icon">
+							<img src="img/main/tel.png" alt="">
+						</div> 
+						<div class="header__tel-numb"> 
+							+38 (050) 170-88-89
+						</div>
+						</a>
+					<div class="location__block-info-social social">
+						<a href="" class="header__social-link social-link">
+							<img src="img/main/social/1.png" alt="">
+						</a>
+						<a href="" class="header__social-link social-link">
+							<img src="img/main/social/2.png" alt="">
+						</a>
+						<a href="" class="header__social-link social-link">
+							<img src="img/main/social/3.png" alt="">
+						</a>
+					</div>
+			</div> <!-- Location block info -->
+		</div> <!-- Location block -->
+	</section> <!-- Location -->
+
+	<div class="diagnostic">
+		<div class="container">
+			<div class="diagnostic__main">
+				<div class="diagnostic__content">
+					<div class="diagnostic__content-title"><span>з</span>апишитесь на бесплатную диагностику прямо сейчас</div>
+					<div class="diagnostic__content-registr">
+						<form action="/" class="diagnostic__content-form">
+							<input class="diagnostic__content-form-text" type="text" name="name" placeholder="Ваше имя">
+						</form>
+						<form action="/" class="diagnostic__content-form">
+							<input class="diagnostic__content-form-text" type="tel" name="telephone" placeholder="Номер телефона">
+						</form>
+						<form action="/" class="diagnostic__content-form">
+							<input class="diagnostic__content-form-text" type="text" name="date" placeholder="Выберите дату">
+						</form>
+					</div>
+
+					<button class="diagnostic__content-button">Записаться на диагностику</button>
+				</div>
+			
+				<div class="diagnostic__img">
+					<img src="img/diagnostic/1.png" alt="">
+				</div>
+			</div>
+		</div> <!-- Diagnostic -->
 	</div>
 </body>
 </html>
