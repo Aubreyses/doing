@@ -92,57 +92,7 @@ body {
 		align-items: center;
 	}
 
-	&__logo {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-top: 20px;
-
-		width: 213px;
-
-		position: relative;
-	}
-
-	&__logo::after {
-		content: "";
-		display: block;
-
-		width: 71px;
-		height: 3px;
-
-		background-color: #E9CC2D;
-
-		position: absolute;
-		transform: rotate(90deg);
-		bottom: 45px;
-		right: -50px;
-	}
-
-	&__logo-icon {
-		width: 80,5px;
-		height: 82px;
-
-		position: relative;
-	}
-
-	&__logo-title {
-		width: 117px;
-		height: 41px;
-
-		font-family: Aqum;
-		font-weight: 700;
-		font-size: 20px;
-		color: #fff;
-		text-transform: uppercase;
-
-		&__yellow {
-			color: #E9CC2D;
-		}
-
-		&__grey {
-			color: #c4c4c4;
-		}
-	}
+	
 
 	&__info {
 		width: 763px;
@@ -218,35 +168,59 @@ body {
 	&__tel:hover {
 		transform: scale(1.05);
 	}
+}
 
+/* Logo */
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
 
-/* Nav */
-	&__nav {
-		width: 588px;
-		height: 43px;
-		display: flex;
-		justify-content: space-between;
+	width: 213px;
 
-		&-link {
-			font-family: Aqum;
-			font-weight: 700;
-			font-size: 20px;
+	position: relative;
 
-			text-transform: uppercase;
-
-			color: #fff;
-
-			transition: color .1s linear;
-
-			span {
-				color: #E9CC2D;
-			}
-		}
-
-		&-link:hover {
+	&-icon {
+		width: 80,5px;
+		height: 82px;
+	
+		position: relative;
+	}
+	
+	&-title {
+		width: 117px;
+		height: 41px;
+	
+		font-family: Aqum;
+		font-weight: 700;
+		font-size: 20px;
+		color: #fff;
+		text-transform: uppercase;
+	
+		&__yellow {
 			color: #E9CC2D;
 		}
+	
+		&__grey {
+			color: #c4c4c4;
+		}
 	}
+}
+
+.logo::after {
+	content: "";
+	display: block;
+
+	width: 71px;
+	height: 3px;
+
+	background-color: #E9CC2D;
+
+	position: absolute;
+	transform: rotate(90deg);
+	bottom: 45px;
+	right: -50px;
 }
 
 /* Social */
@@ -270,6 +244,34 @@ body {
 
 	&-link:last-child {
 		margin-right: 0;
+	}
+}
+
+/* Nav */
+.nav {
+	width: 588px;
+	height: 43px;
+	display: flex;
+	justify-content: space-between;
+
+	&-link {
+		font-family: Aqum;
+		font-weight: 700;
+		font-size: 20px;
+
+		text-transform: uppercase;
+
+		color: #fff;
+
+		transition: color .1s linear;
+
+		span {
+			color: #E9CC2D;
+		}
+	}
+
+	&-link:hover {
+		color: #E9CC2D;
 	}
 }
 
@@ -861,6 +863,78 @@ body {
 			font-size: 20px;
 
 			color: #000000;
+		}
+	}
+}
+
+/* Footer */
+.footer {
+	width: 100%;
+	height: 286px;
+
+	background: url(../img/footer/bc.jpg) center no-repeat;
+	background-size: cover;
+
+
+	&__info {
+		width: 1084px;
+		height: 286px;
+
+		align-items: center;
+
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__name {
+		width: 213px;
+		height: 164px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		margin-top: 0;
+
+		&-icon {
+			margin-bottom: 27px;
+		}
+
+		&-text {
+			font-weight: 700;
+			font-size: 20px;
+
+			color: #fff;
+		}
+	}
+
+	&__logo::after {
+		display: none;
+	}
+
+	&__nav {
+		width: 226px;
+		height: 164px;
+
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&-block-info {
+		width: 329px;
+		height: 165px;
+
+		margin: 34px 45px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: left;
+
+		&-social {
+			margin: 15px 0 0 13px;
 		}
 	}
 }
