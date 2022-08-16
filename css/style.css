@@ -443,9 +443,8 @@ body {
   text-align: center;
 }
 .registr__form-input {
-  width: 284px;
   height: 50px;
-  padding: 15px 15px;
+  padding: 15px 45px;
   background-color: #999A9E;
   color: #FFFFFF;
   font-weight: 500;
@@ -470,8 +469,9 @@ body {
   color: #fff;
 }
 .registr__form-button {
-  width: 459px;
+  max-width: 459px;
   height: 50px;
+  padding: 0 20px;
   margin-left: -43px;
   background-color: #E9CC2D;
   text-transform: uppercase;
