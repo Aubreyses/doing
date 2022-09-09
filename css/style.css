@@ -245,6 +245,8 @@ body {
   background-color: #E9CC2D;
   position: absolute;
   right: 0;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 .header__nav-burger__toggle::after, .header__nav-burger__toggle::before {
   content: "";
@@ -254,6 +256,8 @@ body {
   position: absolute;
   left: -5px;
   z-index: 1;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 .header__nav-burger__toggle::after {
   top: -8px;

@@ -52,15 +52,15 @@
 							</div>
 						</div> <!-- Header__contacts -->
 					</div> <!-- Header__info -->
-					<button class="header__nav-burger active">
+					<button class="header__nav-burger">
 						<span class="header__nav-burger__toggle">menu</span>
 					</button>
 				</div> <!-- Header__top -->
 				<div class="header__nav nav">
-					<a href="#" class="header__nav-link nav-link"><span>э</span>тапы</a>
-					<a href="#" class="header__nav-link nav-link"><span>о</span>борудование</a>
-					<a href="#" class="header__nav-link nav-link"><span>к</span>арта</a>
-					<a href="#" class="header__nav-link nav-link"><span>о</span> нас</a>
+					<a href="#stages" class="header__nav-link nav-link"><span>э</span>тапы</a>
+					<a href="#equipment" class="header__nav-link nav-link"><span>о</span>борудование</a>
+					<a href="#location" class="header__nav-link nav-link"><span>к</span>арта</a>
+					<a href="#about-us" class="header__nav-link nav-link"><span>о</span> нас</a>
 				</div>
 			</div> <!-- Header -->
 			<div class="main">
@@ -84,7 +84,7 @@
 
 	<section class="stages">
 		<div class="container">
-			<div class="stages__title title"><span>к</span>ак мы работаем</div>
+			<div id="stages" class="stages__title title"><span>к</span>ак мы работаем</div>
 			<div class="content">
 				<div class="content__line content__line-1">
 					<div class="content__block-1 block">
@@ -139,7 +139,7 @@
 
 	<section class="equipment">
 		<div class="container">
-			<div class="equipment__title title"><span>о</span>борудование</div>
+			<div id="equipment" class="equipment__title title"><span>о</span>борудование</div>
 
 			<div class="equipment__block">
 				<div class="equipment__block-photo">
@@ -179,7 +179,7 @@
 		</div> <!-- Container -->
 	</section> <!-- Equipment -->
 
-	<section class="location">
+	<section id="location" class="location">
 		<div class="location__container container">
 			<div class="location__block">
 				<div class="location__block-info info">
@@ -244,7 +244,7 @@
 		</div> <!-- Diagnostic -->
 	</div> <!-- Diagnostic -->
 
-	<div class="about-us">
+	<div id="about-us" class="about-us">
 		<div class="container">
 			<div class="title"><span>о</span> нашей станции</div>
 			<div class="about-us__content">
@@ -295,10 +295,10 @@
 					</div>
 				</div>
 				<div class="footer__nav nav">
-					<a href="#" class="footer__nav-link nav-link"><span>э</span>тапы</a>
-					<a href="#" class="footer__nav-link nav-link"><span>о</span>борудование</a>
-					<a href="#" class="footer__nav-link nav-link"><span>к</span>арта</a>
-					<a href="#" class="footer__nav-link nav-link"><span>о</span> нас</a>
+					<a href="#stages" class="footer__nav-link nav-link"><span>э</span>тапы</a>
+					<a href="#equipment" class="footer__nav-link nav-link"><span>о</span>борудование</a>
+					<a href="#location" class="footer__nav-link nav-link"><span>к</span>арта</a>
+					<a href="#about-us" class="footer__nav-link nav-link"><span>о</span> нас</a>
 				</div>
 				<div class="footer__block-info info">
 					<a href="#" class="header__adress footer__adress">
@@ -337,5 +337,7 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/app.js"></script>
 </body>
 </html>

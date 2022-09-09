@@ -192,6 +192,8 @@ body {
 
 			position: absolute;
 			right: 0;
+
+			transition: .2s linear;
 		}
 
 		&__toggle::after,
@@ -205,6 +207,8 @@ body {
 			position: absolute;
 			left: -5px;
 			z-index: 1;
+
+			transition: .2s linear;
 		}
 
 		&__toggle::after {
@@ -219,7 +223,6 @@ body {
 	&__nav-burger.active .header__nav-burger__toggle{
 		background: none;
 	}
-
 	&__nav-burger.active .header__nav-burger__toggle::after {
 		transform-origin: left top;
 		transform: rotate(45deg) translateX(-8px);
