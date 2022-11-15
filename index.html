@@ -8,7 +8,7 @@
 </head>
 <body>
 	<section class="home">
-		<div class="container">
+		<div class="container home__container">
 			<div class="header">
 				<div class="header__top">
 					<a href="#" class="header__logo logo">
@@ -63,22 +63,57 @@
 					<a href="#about-us" class="header__nav-link nav-link"><span>о</span> нас</a>
 				</div>
 			</div> <!-- Header -->
-			<div class="main">
-				<div class="main__text">
-					<div class="main__title">чистка сажевых фильтров</div>
-					<div class="main__subtitle">Мойка фильтров DPF</div>
-					<div class="main__subtext">Сейчас самое время <span>записаться</span> на бесплатную консультацию</div>
+			<div class="main__container active">
+				<div class="main">
+					<div class="main__text">
+						<div class="main__title">чистка сажевых фильтров</div>
+						<div class="main__subtitle">Мойка фильтров DPF</div>
+						<div class="main__subtext">Сейчас самое время <span>записаться</span> на бесплатную консультацию</div>
+					</div>
+					<div class="main__img">
+						<img src="img/main/content/1.png" alt="">
+					</div>
+				</div> <!-- Main -->
+				<div class="registr">
+					<form class="registr__form" action="/" method="post">
+						<input class="registr__form-input" type="tel" name="telephone" placeholder="+38 (___) _ _ _ - _ _ - _ _">
+						<button class="registr__form-button registr-button">
+							<span class="registr__form-button-monitor">Записаться на консультацию</span>
+							<span class="registr__form-button-tel">Записаться</span>	
+						</button>
+					</form>
+				</div> <!-- Registr -->
+			</div> <!-- Main__container -->
+			<div class="main__container-menu">
+				<div class="main__container-menu-nav nav">
+					<a href="#stages" class="main__container-menu-nav-link nav-link"><span>э</span>тапы</a>
+					<a href="#equipment" class="main__container-menu-nav-link nav-link"><span>о</span>борудование</a>
+					<a href="#location" class="main__container-menu-nav-link nav-link"><span>к</span>арта</a>
+					<a href="#about-us" class="main__container-menu-nav-link nav-link"><span>о</span> нас</a>
 				</div>
-				<div class="main__img">
-					<img src="img/main/content/1.png" alt="">
-				</div>
-			</div> <!-- Main -->
-			<div class="registr">
-				<form class="registr__form" action="/" method="post">
-					<input class="registr__form-input" type="tel" name="telephone" placeholder="+38 (___) _ _ _ - _ _ - _ _">
-					<button class="registr__form-button registr-button">Записаться на консультацию</button>
-				</form>
-			</div> <!-- Registr -->
+
+				<div class="main__container-menu-contacts">
+					<a href="tel:+380501708889" class="main__container-menu-contacts-tel header__tel">
+						<div class="main__container-menu-contacts-tel-icon header__tel-icon">
+							<img class="main__container-menu-contacts-tel-icon-img" src="img/main/tel.png" alt="">
+						</div> 
+						<div class="main__container-menu-contacts-tel-numb header__tel-numb"> 
+							+38 (050) 170-88-89
+						</div>
+					</a>
+					<div class="main__container-menu-social social">
+						<a href="#" class="main__container-menu-social-link social-link">
+							<img src="img/main/social/1.png" alt="">
+						</a>
+						<a href="#" class="main__container-menu-social-link social-link">
+							<img src="img/main/social/2.png" alt="">
+						</a>
+						<a href="#" class="main__container-menu-social-link social-link">
+							<img src="img/main/social/3.png" alt="">
+						</a>
+					</div>
+				</div> <!-- Header__contacts -->
+			</div>
 		</div> <!--Container -->
 	</section> <!-- Home -->
 
@@ -143,35 +178,33 @@
 
 			<div class="equipment__block">
 				<div class="equipment__block-photo">
-					<div class="equipment__block-photo-front">
-						<img src="img/equipment/1.png" alt="">
-
-						<div class="equipment__block-photo-front-arr">
-							<a href="" class="equipment__block-photo-front-arr-img">
-								<img src="img/equipment/arr-1.png" alt="">
-							</a>
-							<a href="" class="equipment__block-photo-front-arr-img">
-								<img src="img/equipment/arr-2.png" alt="">
-							</a>
-						</div>
+					<div class="equipment__block-photo-row">
+						<img class="equipment__block-photo-row-img" src="img/equipment/1.png" alt="">
+						<img class="equipment__block-photo-row-img" src="img/equipment/1.png" alt="">
+						<img class="equipment__block-photo-row-img" src="img/equipment/1.png" alt="">
 					</div>
-						<div class="equipment__block-photo-bg">
-						<div class="equipment__block-photo-bg-1">
-							<img src="img/equipment/1.png" alt="">
+
+					<div class="equipment__block-photo-arr">
+						<div href="" class="equipment__block-photo-arr-img array-left">
+							<img src="img/equipment/arr-1.png" alt="">
 						</div>
-						<div class="equipment__block-photo-bg-1">
-							<img src="img/equipment/1.png" alt="">
+						<div href="" class="equipment__block-photo-arr-img array-right">
+							<img src="img/equipment/arr-2.png" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="equipment__block-point">
-					<a href="#" class="equipment__block-point-arr">
-						<img src="img/equipment/arr-1.png" alt="">
-					</a>
-					<img class="equipment__block-point-img" src="img/equipment/dot.png" alt="">
-					<a href="#" class="equipment__block-point-arr">
-						<img src="img/equipment/arr-2.png" alt="">
-					</a>
+					<div class="equipment__block-point-arr array-left">
+						<img src="img/equipment/arr-1.png" alt="/">
+					</div>
+					<div class="equipment__block-point-dot">
+						<div class="equipment__block-point-dot-img active"></div>
+						<div class="equipment__block-point-dot-img"></div>
+						<div class="equipment__block-point-dot-img"></div>
+					</div>
+					<div class="equipment__block-point-arr array-right">
+						<img src="img/equipment/arr-2.png" alt="/">
+					</div>
 				</div>
 			</div> <!-- Equioment block -->
 
@@ -250,7 +283,11 @@
 			<div class="about-us__content">
 				<div class="about-us__content-photo">
 					<div class="about-us__content-photo-img">
-						<img src="img/aboutus/1.jpg" alt="">
+						<div class="about-us__content-photo-img-row">
+							<img class="about-us__content-photo-img-picture" src="img/aboutus/1.jpg" alt="">
+							<img class="about-us__content-photo-img-picture about-us__content-photo-tel" src="img/aboutus/1.jpg" alt="">
+							<img class="about-us__content-photo-img-picture about-us__content-photo-tel" src="img/aboutus/1.jpg" alt="">
+						</div>
 					</div>
 					<div class="about-us__content-photo-line">
 						<div class="about-us__content-photo-line-img">
@@ -262,13 +299,17 @@
 					</div>
 				</div>
 				<div class="about-us__point">
-					<a href="#" class="about-us__point-arr">
+					<div class="about-us__point-arr about-us__arr-left">
 						<img src="img/equipment/arr-1.png" alt="">
-					</a>
-					<img class="about-us__point-img" src="img/equipment/dot.png" alt="">
-					<a href="#" class="about-us__point-arr">
+					</div>
+					<div class="about-us__point-dot">
+						<div class="about-us__point-dot-img active"></div>
+						<div class="about-us__point-dot-img"></div>
+						<div class="about-us__point-dot-img"></div>
+					</div>
+					<div class="about-us__point-arr about-us__arr-right">
 						<img src="img/equipment/arr-2.png" alt="">
-					</a>
+					</div>
 				</div>
 				<div class="about-us__content-text">Узкопрофильные специалисты в чистке фильтров, мы занимаемся этим с 1990 года на самом современном оборудовании которое позволяет чинить новейшие модели авто, регулярно увеличиваем квалификацию и обновляем техническую базу... Узкопрофильные специалисты в чистке фильтров, мы занимаемся этим с 1990 года на самом современном оборудовании которое позволяет чинить новейшие модели авто, регулярно увеличиваем квалификацию и обновляем техническую базу... Узкопрофильные специалисты в чистке фильтров, мы занимаемся этим с 1990 года на самом современном оборудовании которое позволяет чинить новейшие модели авто, регулярно увеличиваем квалификацию и обновляем техническую базу...</div>
 			</div> <!-- About us content-->
